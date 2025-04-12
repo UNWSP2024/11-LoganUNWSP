@@ -1,0 +1,22 @@
+# Logan H's Name and Address
+# NOTE: I didn't feel comfortable putting my actual address, so I picked my school (sorry)
+
+import tkinter as tk
+
+def show_info():
+    info_label.config(text="Logan Holmstrom\n430 3rd Ave NE\nSt Cloud, MN 56304")
+
+window = tk.Tk()
+window.title("Personal Info")
+window.geometry("300x200")
+
+info_label = tk.Label(window, text="", font=("Arial", 12), justify="center")
+info_label.pack(pady=20)
+
+show_button = tk.Button(window, text="Show Info", command=show_info)
+show_button.pack(pady=5)
+
+quit_button = tk.Button(window, text="Quit", command=window.quit)
+quit_button.pack(pady=5)
+
+window.mainloop()
