@@ -1,0 +1,13 @@
+# Logan H's Favorite Saying Program
+
+import tkinter as tk
+
+window = tk.Tk()
+window.title("Favorite Saying")
+window.geometry("400x200")
+
+quote = "You miss every shot you don't take."
+label = tk.Label(window, text=quote, font=("Helvetica", 14), wraplength=350, justify="center")
+label.pack(expand=True)
+
+window.mainloop()
