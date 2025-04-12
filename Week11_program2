@@ -10,7 +10,6 @@ window = tk.Tk()
 window.title("Personal Info")
 window.geometry("300x200")
 
-# Label to display the info
 info_label = tk.Label(window, text="", font=("Arial", 12), justify="center")
 info_label.pack(pady=20)
 
